@@ -1,0 +1,49 @@
+.container {
+    padding-top: 50px;
+}
+
+.row {
+    padding-top:15px;
+    background-color: #e8e8e8;
+
+}
+
+span {
+	width:230px;
+	margin-left:10px;
+}
+
+.trackList {
+	width:90%;
+}
+
+.column {
+    cursor:url(../assets/cursor_hand_copy.png),move;
+    list-style-type:none;
+    background: url('http://i.stack.imgur.com/Xkiaa.png') no-repeat;
+    padding-left:1.5em;
+    background-position:1px 50%;
+}
+
+.label {
+    cursor:pointer;
+}
+
+.column.over {
+    cursor:pointer;
+    border-top: 2px dashed #000;
+}
+
+.column.under {
+    border-bottom: 2px dashed #000;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
